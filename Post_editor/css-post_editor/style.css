@@ -1,0 +1,53 @@
+#saveDelta {
+    display: block;
+    margin: 20px auto;
+}
+.create-post .title {
+    margin: 30px;
+    text-align: center;
+}
+.create-post .title .fa-pen-square {
+    display: inline-block;
+    font-size: 2em;
+    color:#000;
+    margin-right: 10px;
+}
+.create-post .title h2 {
+    font-weight: 100;
+    display: inline-block;
+}
+.create-post #post-form{
+    margin-bottom: 2em;
+}
+.create-post #post-form .group {
+    margin:40px 0;
+}
+.create-post #post-form .group lable {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.create-post #post-form .group .icon {
+    margin:0px 10px;
+}
+.create-post #post-form .group input:not([type='file']) {
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 2px 7px #e8e8e8;
+    padding:5px 15px;
+}
+.create-post #post-form .group input:not([type='file']):focus-visible {
+    outline: none;
+}
+.create-post #post-form .group #file-lable{
+    display:block;
+    margin-bottom: 10px;
+}
+.create-post #post-form .group input[type='file']{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.create-post #submit {
+    display: block;
+    margin: 0 auto;
+}

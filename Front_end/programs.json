@@ -1,0 +1,62 @@
+{
+    "0":{
+        "name":"Abductors"
+    },
+    "1":{
+        "name":"Abs"
+    },
+    "2":{
+        "name":"Adductors"
+    },
+    "3":{
+        "name":"Biceps"
+    },
+    "4":{
+        "name":"Calves"
+    },
+    "5":{
+        "name":"Chest"
+    },
+    "6":{
+        "name":"Forearms"
+    },
+    "7":{
+        "name":"Glutes"
+    },
+    "8":{
+        "name":"Hamstrings"
+    },
+    "9":{
+        "name":"Hip Flexors"
+    },
+    "10":{
+        "name":"IT Band"
+    },
+    "11":{
+        "name":"Lats"
+    },
+    "12":{
+        "name":"Lower Back"
+    },
+    "14":{
+        "name":"Neck"
+    },
+    "15":{
+        "name":"Obliques"
+    },
+    "16":{
+        "name":"Palmar Facsia"
+    },
+    "17":{
+        "name":"Plantar Fascia"
+    },
+    "19":{
+        "name":"Shoulders"
+    },
+    "20":{
+        "name":"Traps"
+    },
+    "21":{
+        "name":"Triceps"
+    }
+}

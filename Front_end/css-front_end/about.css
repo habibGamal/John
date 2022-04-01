@@ -1,0 +1,14 @@
+.about .about-content .media-links > div > a {
+    color: #000;
+    transition: color .5s;
+    font-size: 3rem;
+}
+.about .about-content .media-links .youtube > a:hover {
+    color: var(--youtube);
+}
+.about .about-content .media-links .facebook > a:hover {
+    color: var(--facebook);
+}
+.about .about-content .media-links .insta > a:hover {
+    color: var(--instagram);
+}

@@ -1,0 +1,32 @@
+.posts {
+    margin: 20px 0;
+}
+.posts .post {
+    background-color: #ecf0f1;
+    padding: 0;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+.posts .post .post-thump img {
+    width:100%;
+}
+.posts .post .post-info {
+    padding: 10px;
+}
+.posts .post .post-info div {
+    margin:auto;
+    width: fit-content;
+}
+.posts .post .post-info div button {
+    margin-top:20px;
+}
+.blogs nav , .blogs nav ul{
+    width:fit-content;
+}
+.post-cont a[id='delete']:hover svg{
+    color: var(--danger)!important;
+}
+.post-cont a[id='edit']:hover svg{
+    color: var(--primary)!important;
+}
+

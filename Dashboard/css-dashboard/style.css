@@ -1,0 +1,88 @@
+/* Post design */
+.boundry {
+    border: 1px solid var(--yellow);
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 5px;
+    position: relative;
+}
+.boundry-title {
+    position: absolute;
+    background-color: #fff;
+    top: -14px;
+    padding: 0 1em;
+}
+/* course design */
+.course {
+    background-color:#000;
+    margin:50px 80px;
+    border-radius:20px;
+    color:#fff;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 10px #000;
+    height: 467px;
+}
+.course .cyrcle {
+    width:300px;
+    height: 300px;
+    background-color:var(--overYellow);
+    border-radius: 100%;
+    position: absolute;
+    top:-25%;
+    right:-25%;
+}
+.course .course-photo {
+    width:200px;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 100%;
+    margin: 100px auto 50px;
+}
+.course .course-photo img {
+    width: 310px;
+    transform: translateX(-30px);
+}
+.course .course-title h5 {
+    padding-bottom:10px;
+    font-size: 1.6em;
+}
+.course .progress-btn { margin-bottom:15px;}
+.course .progress-btn .btn-custom {
+    background-color: var(--overYellow);
+}
+.add-course {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #00000094;
+    color:#000;
+}
+.add-course .plus-cyrcle {
+    font-size:3em;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 100%;
+    transition: transform .5s , background .5s;
+}
+.add-course .plus-cyrcle:hover {
+    transform:scale(1.1);
+    background-color: #000;
+}
+.add-course .plus-cyrcle .fa-plus {
+    margin-top:24px;
+    color:#000;
+    transition:color .5s
+}
+.add-course .plus-cyrcle:hover .fa-plus{color:#fff;}
+
+/* calculator */
+#calculator {
+    padding: 1em;
+}
+#calculator #calc {
+    display: block;
+    margin: 0 auto;
+}
