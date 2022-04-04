@@ -1,7 +1,7 @@
 <?php
     trait Query {
 
-        public function get($connection ,$stmt , $args = array()){
+        static public function get($connection ,$stmt , $args = array()){
 
             $query = $connection->prepare($stmt);
             $query->execute($args);
@@ -19,7 +19,7 @@
             return ['process' => $result , 'data' => $data = $query->fetch()] ;
         }
 
-        public function get_all($connection ,$stmt , $args = array()){
+        static public function get_all($connection ,$stmt , $args = array()){
 
             $query = $connection->prepare($stmt);
             
@@ -28,7 +28,7 @@
             return $query->fetchAll();
         }
 
-        public function get_all_assosiated($connection ,$stmt , $args = array()){
+        static public function get_all_assosiated($connection ,$stmt , $args = array()){
 
             $query = $connection->prepare($stmt);
             
@@ -37,7 +37,7 @@
             return $query->fetchAll(PDO::FETCH_ASSOC);
         }
         
-        public function set($connection ,$stmt , $args = []){
+        static public function set($connection ,$stmt , $args = []){
 
             $query = $connection->prepare($stmt);
             
