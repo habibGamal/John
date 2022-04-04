@@ -1,24 +1,17 @@
 <?php
 
-    // $dsn = 'mysql:host=localhost;dbname=john';
-    // $username = 'root';
-    // $password = '';
-    $db = parse_url(getenv("DATABASE_URL"));
-    try {
-        // $connect = new PDO($dsn , $username ,$password);
-        // $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $connect = new PDO("pgsql:" . sprintf(
-            "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-            $db["host"],
-            $db["port"],
-            $db["user"],
-            $db["pass"],
-            ltrim($db["path"], "/")
-        ));
-        $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-    catch(PDOExeception $e){
-        echo 'Connection Error here' . $e->getMessage();
-    }
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"], 1);
+$dsn = 'mysql:host='+$cleardb_url["host"]+';dbname='+$cleardb_db;
+$username = $cleardb_url["user"];
+$password = $cleardb_url["pass"];
 
-?>
+try {
+    $connect = new PDO($dsn , $username ,$password);
+    $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOExeception $e) {
+    echo 'Connection Error here' . $e->getMessage();
+}
