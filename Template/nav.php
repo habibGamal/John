@@ -3,7 +3,7 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <img src="<?php echo IMAGES;?>logo.png">
+                    <img src="<?php echo IMAGES;?>Logo.png">
                 </div>
                 <div class="items">
                     <ul>
