@@ -11,7 +11,7 @@
     $nav_color = 1;
     include 'error.php';
     include 'msg.php';
-    // include 'connect.php';
+    include 'connect.php';
     include 'query.php';
     include 'filter.php';
     include 'person.php';
