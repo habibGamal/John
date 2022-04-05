@@ -66,7 +66,8 @@
             <!--Take the THUMPNAIL of the post-->
             <div class="group">
                 <lable id="file-lable">Post thumpnail</lable>
-                <input type="file" id="post_thump" name="post_thump" accept="image/*">
+                <!-- <input type="file" id="post_thump" name="post_thump" accept="image/*"> -->
+                <input type="text" id="post_thump" name="post_thump"">
             </div>
             <!--Take the DESCRIPTION of the post-->
             <div class="group">

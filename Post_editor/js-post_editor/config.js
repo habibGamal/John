@@ -38,7 +38,7 @@ function newPost(){
   // append the operation
   data.append('op','new');
   // append thump
-  data.append('post_thump',thump.files[0]);
+  // data.append('post_thump',thump.files[0]);
   fetch('./handle.php',{method: 'POST',body: data}).then(res => res.text()).then(res=>console.log(res));
 }
 
@@ -50,7 +50,7 @@ function editPost(){
   // append execute
   data.append('execute',true);
   // append thump
-  data.append('post_thump',thump.files[0]);
+  // data.append('post_thump',thump.files[0]);
   fetch('./handle.php',{method: 'POST',body: data}).then(res => res.text()).then(res=>console.log(res));
 }
 
